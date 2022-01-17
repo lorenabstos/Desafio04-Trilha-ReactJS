@@ -7,23 +7,23 @@ import Input from '../Input';
 import { FormHandles } from '@unform/core';
 
 interface AddFood {
-  image:string;
-  name:string;
-  price:string;
-  description:string;
+  image: string;
+  name: string;
+  price: string;
+  description: string;
 }
 
 interface IFood {
-  id:number;
-  name:string;
-  description:string;
-  price:string;
-  available:boolean;
-  image:string;
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  available: boolean;
+  image: string;
 }
 
 interface ModalEditFoodProps {
-  isOpen:boolean;
+  isOpen: boolean;
   setIsOpen: () => void;
   handleUpdateFood: (data: AddFood) => void;
   editingFood: IFood
