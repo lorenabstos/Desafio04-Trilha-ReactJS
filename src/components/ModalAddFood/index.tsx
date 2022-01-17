@@ -1,9 +1,10 @@
 import { useRef } from 'react';
 import { FiCheckSquare } from 'react-icons/fi';
 
-import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
+
+import { Form } from './styles';
 import { FormHandles } from '@unform/core';
 
 interface AddFood {
@@ -14,7 +15,7 @@ interface AddFood {
 }
 
 interface ModalAddFoodProps {
-  isOpen:boolean;
+  isOpen: boolean;
   setIsOpen: () => void;
   handleAddFood: (data: AddFood) => void
 }
